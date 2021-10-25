@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="sign_in">Sign In</string>
+    <string name="terms_and_nconditions">Terms and\nConditions</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </string>
+    <string name="agree_terms">I agree with the Terms and Conditions and Privacy Policy</string>
+    <string name="continue_">Continue</string>
+    <string name="read_full_terms">Read full Terms and Conditions</string>
+    <string name="email">Email</string>
+    <string name="or_sign_up">Or, Sign up</string>
+    <string name="using_email">Using Email</string>
+    <string name="enter_your_email_to_continue">Enter your Email to continue</string>
+    <string name="otp_on_call">OTP on Call</string>
+    <string name="or_get">or get</string>
+    <string name="resend_otp">Resend OTP</string>
+    <string name="full_name">Full Name</string>
+    <string name="phone">Phone</string>
+    <string name="empty_email">Please enter an email.</string>
+    <string name="valid_email">Please enter valid email.</string>
+    <string name="sign_up_or_login">Sign up or Login</string>
+</resources>

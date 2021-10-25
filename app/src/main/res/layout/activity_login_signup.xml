@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="isPhoneNumberFilled"
+            type="Boolean" />
+    </data>
+
+    <LinearLayout
+        android:id="@+id/bottomSheet"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="56dp"
+        android:orientation="vertical"
+        app:behavior_hideable="false"
+        app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:fillViewport="true"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/dimen_15"
+                android:orientation="vertical">
+
+                <com.androidnativesample.utils.MontserratMediumTextView
+                    android:id="@+id/tvSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_40"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="true"
+                    android:textColor="@color/light_grayHeading"
+                    android:textSize="@dimen/dimen_sp17" />
+
+                <com.androidnativesample.utils.MontserratMediumTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_16"
+                    android:text="Insert your phone number to continue"
+                    android:textColor="@color/light_grayHeading"
+                    android:textSize="@dimen/dimen_sp14" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_60"
+                    android:layout_marginHorizontal="@dimen/dimen_15"
+                    android:layout_marginTop="@dimen/dimen_25"
+                    android:gravity="center">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/dimen_7">
+                        <com.hbb20.CountryCodePicker
+                            android:id="@+id/ccp"
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="@dimen/dimen_50"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical"
+                            android:visibility="visible"
+                            app:ccpDialog_allowSearch="true"
+                            app:ccpDialog_keyboardAutoPopup="false"
+                            app:ccp_arrowSize="@dimen/dimen_10"
+                            app:ccp_countryPreference="US"
+                            app:ccp_defaultLanguage="ENGLISH"
+                            app:ccp_defaultPhoneCode="1"
+                            app:ccp_showFlag="true"
+                            app:ccp_showNameCode="false"
+                            app:ccp_showPhoneCode="false"
+                            app:ccp_textSize="@dimen/dimen_sp16" />
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dimen_1"
+                            android:background="@color/theme_blue"/>
+                    </LinearLayout>
+
+
+
+                    <com.androidnativesample.utils.MontserratMediumEditText
+                        android:id="@+id/etCountryCode"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/theme_blue"
+                        android:enabled="false"
+                        android:focusable="false"
+                        android:gravity="center"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:layout_marginHorizontal="@dimen/dimen_10"
+                        android:paddingHorizontal="@dimen/dimen_15"
+                        android:text="+91"
+                        android:textAlignment="center"
+                        app:backgroundTint="@color/theme_blue"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_sp18" />
+
+                    <com.androidnativesample.utils.MontserratMediumEditText
+                        android:id="@+id/etPhoneNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center_vertical"
+                        android:backgroundTint="@color/theme_blue"
+                        app:backgroundTint="@color/theme_blue"
+                        android:digits="0123456789"
+                        android:gravity="start"
+                        android:drawablePadding="@dimen/dimen_15"
+                        android:drawableStart="@mipmap/telephone"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="10"
+                        android:textAlignment="textStart"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/dimen_sp18" />
+
+
+                </LinearLayout>
+
+
+                <com.androidnativesample.utils.MontserratMediumTextView
+                    android:id="@+id/tvContinue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dimen_50"
+                    android:layout_marginBottom="@dimen/dimen_10"
+                    android:background="@drawable/button_background"
+                    android:paddingHorizontal="@dimen/dimen_70"
+                    android:paddingVertical="@dimen/dimen_12"
+                    android:text="@string/continue_"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/dimen_sp20" />
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>
